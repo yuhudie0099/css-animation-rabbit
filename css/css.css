@@ -1,0 +1,33 @@
+html,body{width:100%;height:100%;overflow: hidden;margin: 0;padding: 0;}
+.pic{width:100%;height:100%;margin:0 auto;}
+.sky{width:100%;height:60%;overflow:hidden;background:linear-gradient(rgb(196, 228, 253),rgb(251, 253, 248));}
+.ground{width:100%;height:40%;background:linear-gradient(rgb(251, 253, 248), rgb(148, 190, 89));}
+.cloud{position:relative;width:10vw;height:10vw;background-color:#fff;border-radius:50%;}
+.cloud::before{position:absolute;content:"";width:162%;height:56%;border-radius:50%;background-color: #fff;left:-52%;top:37%;}
+.cloud::after{position:absolute;content:"";width:60%;height:80%;border-radius:50%;background-color: #fff;left:-26%;top:22%;transform:rotate(-45deg);} 
+.no1{left:110%;top:14%;
+             animation:cloud-move 18s linear 5s infinite;
+     -webkit-animation: cloud-move 18s linear 5s infinite;
+        -moz-animation: cloud-move 18s linear 5s infinite;}
+.no2{left:110%;top:-20%;transform:scale(0.9);opacity:0.8;
+             animation:cloud-move 12s linear 2s infinite;
+     -webkit-animation:cloud-move 12s linear 2s infinite;
+        -moz-animation: cloud-move 12s linear 2s infinite;}
+.no3{left:110%;top:-38%;transform:scale(0.8);opacity:0.95;
+             animation:cloud-move 16s linear 1s infinite;
+     -webkit-animation: cloud-move 16s linear 1s infinite;
+        -moz-animation: cloud-move 16s linear 1s infinite;}
+.no4{left:110%;top:-40%;transform:scale(0.65);opacity:0.85;
+             animation:cloud-move 14s linear 3s infinite;
+     -webkit-animation: cloud-move 14s linear 3s infinite;
+        -moz-animation: cloud-move 14s linear 3s infinite;}
+.no5{left:110%;top:-90%;transform:scale(0.8);opacity:0.9;
+             animation:cloud-move 16s linear 4s infinite;
+     -webkit-animation: animation:cloud-move 16s linear 4s infinite;
+        -moz-animation: animation:cloud-move 16s linear 4s infinite;}
+@keyframes cloud-move{
+	from{left:110%}
+	to{left:-50%}
+}
+.rabbit-box{position: absolute;bottom: 50px;right:200px;width:20vw;height:20vw;}
+.rabbit{width:100%;height:100%;}
